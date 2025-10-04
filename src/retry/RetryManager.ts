@@ -9,7 +9,7 @@ export class RetryManager {
       maxRetries: options.maxRetries || 3,
       baseDelay: options.baseDelay || 1000, // 1 second
       maxDelay: options.maxDelay || 30000, // 30 seconds
-      backoffMultiplier: options.backoffMultiplier || 2,
+      backoffMultiplier: options.backoffMultiplier || 2
     };
   }
 
@@ -25,16 +25,16 @@ export class RetryManager {
 
   getRetryDelay(attemptNumber: number): number {
     switch (this.options.strategy) {
-      case RetryStrategy.EXPONENTIAL_BACKOFF:
-        return this.getExponentialBackoffDelay(attemptNumber);
-      case RetryStrategy.LINEAR:
-        return this.getLinearDelay(attemptNumber);
-      case RetryStrategy.FIXED_DELAY:
-        return this.options.baseDelay;
-      case RetryStrategy.NONE:
-        return 0;
-      default:
-        return this.options.baseDelay;
+    case RetryStrategy.EXPONENTIAL_BACKOFF:
+      return this.getExponentialBackoffDelay(attemptNumber);
+    case RetryStrategy.LINEAR:
+      return this.getLinearDelay(attemptNumber);
+    case RetryStrategy.FIXED_DELAY:
+      return this.options.baseDelay;
+    case RetryStrategy.NONE:
+      return 0;
+    default:
+      return this.options.baseDelay;
     }
   }
 
@@ -129,7 +129,7 @@ export class RetryManager {
   resetRetryCount(transaction: QueuedTransaction): QueuedTransaction {
     return {
       ...transaction,
-      retryCount: 0,
+      retryCount: 0
     };
   }
 
@@ -137,7 +137,7 @@ export class RetryManager {
   incrementRetryCount(transaction: QueuedTransaction): QueuedTransaction {
     return {
       ...transaction,
-      retryCount: transaction.retryCount + 1,
+      retryCount: transaction.retryCount + 1
     };
   }
 }

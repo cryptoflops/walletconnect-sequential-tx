@@ -86,9 +86,9 @@ export class TransactionEventEmitter extends EventEmitter<TransactionEvents> {
     return new Promise((resolve, reject) => {
       const timeoutId = timeout
         ? setTimeout(() => {
-            this.off(eventName as any, handler);
-            reject(new Error(`Timeout waiting for event: ${String(eventName)}`));
-          }, timeout)
+          this.off(eventName as any, handler);
+          reject(new Error(`Timeout waiting for event: ${String(eventName)}`));
+        }, timeout)
         : null;
 
       const handler = (data: Parameters<TransactionEvents[K]>[0]) => {
