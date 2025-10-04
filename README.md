@@ -1,6 +1,24 @@
 # WalletConnect Sequential Transaction Handler
 
+[![npm version](https://img.shields.io/npm/v/@cryptoflops/walletconnect-sequential-tx.svg?style=flat-square)](https://www.npmjs.com/package/@cryptoflops/walletconnect-sequential-tx)
+[![npm downloads](https://img.shields.io/npm/dm/@cryptoflops/walletconnect-sequential-tx.svg?style=flat-square)](https://www.npmjs.com/package/@cryptoflops/walletconnect-sequential-tx)
+[![CI](https://github.com/cryptoflops/walletconnect-sequential-tx/actions/workflows/ci.yml/badge.svg)](https://github.com/cryptoflops/walletconnect-sequential-tx/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?style=flat-square)](https://www.typescriptlang.org/)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/@cryptoflops/walletconnect-sequential-tx?style=flat-square)](https://bundlephobia.com/package/@cryptoflops/walletconnect-sequential-tx)
+[![Dependencies](https://img.shields.io/librariesio/release/npm/@cryptoflops/walletconnect-sequential-tx?style=flat-square)](https://libraries.io/npm/@cryptoflops%2Fwalletconnect-sequential-tx)
+[![GitHub stars](https://img.shields.io/github/stars/cryptoflops/walletconnect-sequential-tx?style=social)](https://github.com/cryptoflops/walletconnect-sequential-tx)
+
 A powerful TypeScript library for managing sequential blockchain transactions with WalletConnect/Reown integration. Perfect for dApps that need to execute complex, dependent transactions with automatic retry logic and comprehensive error handling.
+
+## 📚 Quick Links
+
+- 📦 [NPM Package](https://www.npmjs.com/package/@cryptoflops/walletconnect-sequential-tx)
+- 🐙 [GitHub Repository](https://github.com/cryptoflops/walletconnect-sequential-tx)
+- 📖 [Documentation](#-api-reference)
+- 🚀 [Quick Start](#-quick-start)
+- 💡 [Examples](#-advanced-usage)
+- 🤝 [Contributing](#-contributing)
 
 ## 🌟 Features
 
