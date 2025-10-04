@@ -17,13 +17,13 @@ A powerful TypeScript library for managing sequential blockchain transactions wi
 ## 📦 Installation
 
 ```bash
-npm install @walletconnect/sequential-tx-handler
+npm install @cryptoflops/walletconnect-sequential-tx
 ```
 
 or
 
 ```bash
-yarn add @walletconnect/sequential-tx-handler
+yarn add @cryptoflops/walletconnect-sequential-tx
 ```
 
 ## 🚀 Quick Start
@@ -31,7 +31,7 @@ yarn add @walletconnect/sequential-tx-handler
 ### Basic Usage
 
 ```typescript
-import { SequentialTransactionHandler } from '@walletconnect/sequential-tx-handler';
+import { SequentialTransactionHandler } from '@cryptoflops/walletconnect-sequential-tx';
 import { createWalletClient, custom } from 'viem';
 
 // Initialize with your wallet provider
@@ -109,7 +109,7 @@ handler.on('transaction:retry', (tx, attemptNumber) => {
 ```typescript
 import { createAppKit } from '@reown/appkit/react';
 import { WagmiAdapter } from '@reown/appkit-adapter-wagmi';
-import { WalletConnectProvider } from '@walletconnect/sequential-tx-handler';
+import { WalletConnectProvider } from '@cryptoflops/walletconnect-sequential-tx';
 
 // Create Reown AppKit instance
 const appKit = createAppKit({
@@ -302,8 +302,8 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 - [WalletConnect Documentation](https://docs.walletconnect.com)
 - [Reown AppKit Documentation](https://docs.reown.com)
-- [GitHub Repository](https://github.com/yourusername/walletconnect-sequential-tx)
-- [NPM Package](https://www.npmjs.com/package/@walletconnect/sequential-tx-handler)
+- [GitHub Repository](https://github.com/cryptoflops/walletconnect-sequential-tx)
+- [NPM Package](https://www.npmjs.com/package/@cryptoflops/walletconnect-sequential-tx)
 
 ## 💡 Use Cases
 

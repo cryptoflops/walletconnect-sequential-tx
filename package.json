@@ -1,5 +1,5 @@
 {
-  "name": "@walletconnect/sequential-tx-handler",
+  "name": "@cryptoflops/walletconnect-sequential-tx",
   "version": "1.0.0",
   "description": "A TypeScript library for managing sequential blockchain transactions with WalletConnect/Reown integration",
   "main": "dist/index.js",
