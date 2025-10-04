@@ -1,0 +1,60 @@
+{
+  "name": "@walletconnect/sequential-tx-handler",
+  "version": "1.0.0",
+  "description": "A TypeScript library for managing sequential blockchain transactions with WalletConnect/Reown integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/walletconnect-sequential-tx.git"
+  },
+  "keywords": [
+    "walletconnect",
+    "reown",
+    "web3",
+    "blockchain",
+    "ethereum",
+    "transactions",
+    "sequential",
+    "queue"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@reown/appkit": "^1.8.6",
+    "@reown/appkit-adapter-wagmi": "^1.8.6",
+    "ethers": "^6.15.0",
+    "viem": "^2.37.7",
+    "wagmi": "^2.17.1",
+    "eventemitter3": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2",
+    "@types/jest": "^29.5.12",
+    "@typescript-eslint/eslint-plugin": "^7.0.0",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "hardhat": "^2.26.3",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts": "^4.9.6",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "prettier": "^3.2.5",
+    "typescript": "^5.9.2"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
