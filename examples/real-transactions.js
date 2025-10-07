@@ -14,7 +14,7 @@ const { SequentialTransactionHandler } = require('@cryptoflops/walletconnect-seq
 const CONFIG = {
   // Your private key (NEVER commit this to git!)
   // For testing, use a test wallet with small amounts
-  PRIVATE_KEY: process.env.PRIVATE_KEY || 'YOUR_PRIVATE_KEY_HERE',
+  PRIVATE_KEY: process.env.PRIVATE_KEY, // Always use environment variables, never hardcode
   
   // RPC URLs (you can get free ones from Infura, Alchemy, etc.)
   RPC_URLS: {
